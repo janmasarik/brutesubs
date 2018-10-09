@@ -10,7 +10,7 @@ wordlists=fierce_hostlist.txt,namelist.txt   #specify which wordlists you want t
 
 temp1=/data/output/temp1.txt    #temp1 file
 temp2=/data/output/temp2.txt	#temp2 file					
-temp3=/data/output/temp3.txt	#temp3 file					
+temp3=/data/output/temp3.txt	#temp3 file						
 
 gobusterfile=/data/output/gobusteroutput.txt		#gobuster output gets saved here
 enumallfile=/data/output/enumalloutput.txt			#enumall output gets saved here
@@ -21,7 +21,7 @@ google_api=<>				#ADD YOUR KEY
 google_cse=<>		        #ADD YOUR KEY
 shodan_api=<>				#ADD YOUR KEY					
 				
-altdnsserver=8.8.8.8		#DNS server for altdns to resolve						
+altdnsserver=1.1.1.1		#DNS server for altdns to resolve						
 
 finaloutputbeforealtdns=/data/finaloutputbeforealtdns.txt			#final output of bruteforced subdomains before running altdns		
 
