@@ -1,12 +1,12 @@
 #!/bin/bash
 
-while [[ ! -f $gobusterfile || ! -f $enumallfile || ! -f $sublist3rfile ]] ;
+while [![ -f $gobusterfile ] && [ -f $enumallfile ] && [ -f $sublist3rfile ] && [ -f $amassfile ]] ;
 do
 	echo "All tools haven't finished running yet so waiting.."
 	sleep 30
 done
 
-if [ -f $gobusterfile ] && [ -f $enumallfile ] && [ -f $sublist3rfile ];
+if [ -f $gobusterfile ] && [ -f $enumallfile ] && [ -f $sublist3rfile ] && [ -f $amassfile ];
 	then 
 		echo "All tools have finished running."
 		echo "Now, combining all output to produce the final bruteforced subdomains list"

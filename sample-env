@@ -15,6 +15,7 @@ temp3=/data/output/temp3.txt	#temp3 file
 gobusterfile=/data/output/gobusteroutput.txt		#gobuster output gets saved here
 enumallfile=/data/output/enumalloutput.txt			#enumall output gets saved here
 sublist3rfile=/data/output/sublist3routput.txt		#sublist3r output gets saved here
+amassfile=/data/output/amassoutput.txt
 
 google_api=<>				#ADD YOUR KEY		
 google_cse=<>		        #ADD YOUR KEY

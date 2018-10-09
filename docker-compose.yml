@@ -1,5 +1,14 @@
 version: "2"
 services:
+    amass:
+        build: https://github.com/OWASP/Amass.git
+        container_name: amass
+        env_file: .env
+        volumes:
+            - ./myoutdir/$DIRNAME:/data
+            - ./myoutdir/$DIRNAME/output:/data/output
+        command: -d $TARGETS -passive -whois -min-for-recursive 3 -o $amassfile
+
     gobuster:
         build:
             context: .
