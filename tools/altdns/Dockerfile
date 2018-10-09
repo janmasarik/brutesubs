@@ -26,8 +26,8 @@ RUN mkdir /opt/subscan
 WORKDIR /opt/subscan
 
 # Install golang. 
-RUN curl -O https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz && \
-	tar -xvf go1.6.linux-amd64.tar.gz && \
+RUN curl -O https://storage.googleapis.com/golang/go1.11.1.linux-amd64.tar.gz && \
+	tar -xvf go1.11.1.linux-amd64.tar.gz && \
 	mv go /usr/local && \
 	export PATH=$PATH:/usr/local/go/bin && \
 	mkdir $HOME/work && \
