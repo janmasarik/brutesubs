@@ -15,10 +15,9 @@ RUN apt-get install -y \
 	python-dnspython \
 	python-setuptools \
 	python-dev \
+	python-pip \
 	wget \
 	zlib1g-dev && apt-get clean
-
-RUN easy_install pip && pip install --upgrade pip
 
 RUN mkdir /opt/subscan
 WORKDIR /opt/subscan
