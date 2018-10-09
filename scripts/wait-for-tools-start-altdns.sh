@@ -34,13 +34,12 @@ if [ -f $gobusterfile ] && [ -f $enumallfile ] && [ -f $sublist3rfile ] && [ -f 
 
 		echo "Getting the resolved subdomains from the ALTDNS output and combining them with the previously obtained bruteforced subdomains"
 		cat $altdnsoutput | cut -d':' -f 1 > $altdnsonlysubs
-		sort -u $finaloutputbeforealtdns $altdnsonlysubs | grep $TMP > $finaloutputafteraltdns
+		sort -u $finaloutputbeforealtdns $altdnsonlysubs > $finaloutputafteraltdns
 
 		# if running nmap, resolve all subdomains to their IP, sort IP, and run nmap against those unique IPs.
 		# keep track of what subdomains are resolving to what IPs and what ports are open for a particular IP for posterity
 
-
-		echo "END"
+		echo "DONE"
 fi
 
 
